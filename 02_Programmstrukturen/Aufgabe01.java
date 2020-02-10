@@ -7,6 +7,8 @@ public class Aufgabe01{
             for(int e = 1; e <= 10; e++){
             int resultat = i * e;
             System.out.println(i+" x "+e+" = "+resultat);
+
+            public static int test = 1;
             }
         }
     }
