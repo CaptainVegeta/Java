@@ -30,8 +30,15 @@ public class Hauptklasse {
 
         person[8].aendereAttribute("Dan", 40, 1.80f);
 
-        person[9].aendereAttribute("Miguel", 29, 1.80f);        
-    }
+        person[9].aendereAttribute("Miguel", 29, 1.80f);
 
-    
+        int summe = 0;
+        for (int i = 0; i < person.length; i++) {
+            summe = summe+person[i].alter;
+            System.out.print(person[i].alter+", ");
+        }
+        System.out.println(summe);
+        System.out.println("Das Durchschnittsalter beträg: "+summe/person.length);
+
+    }
 }
