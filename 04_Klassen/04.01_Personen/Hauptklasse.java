@@ -8,8 +8,9 @@ public class Hauptklasse {
         int arrayGroesse = 10;
         Person[] person = new Person[arrayGroesse];
         for (int i = 0; i < person.length; i++) {
-            person[i] = new Person();
+            person[i] = new Person("Martin"+i, 27+i, 1.75f+(i/100));
         }
+        /** 
         person[0].aendereAttribute("Murat", 26, 1.75f);
         person[1].aendereAttribute("Michael", 26, 1.75f);
         person[2].aendereAttribute("Dan", 40, 1.80f);
@@ -20,6 +21,7 @@ public class Hauptklasse {
         person[7].aendereAttribute("Alex", 28, 1.75f);
         person[8].aendereAttribute("Daniel", 42, 1.80f);
         person[9].aendereAttribute("Runaldu", 32, 1.80f);
+        */
 
         // Alter berechnen
         int summe = 0;

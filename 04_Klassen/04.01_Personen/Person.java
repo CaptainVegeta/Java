@@ -7,6 +7,13 @@ public class Person {
     public int alter;
     public float groesse;
 
+    public Person(String name, int alter, float groesse){
+        this.name = name;
+        this.alter = alter;
+        this.groesse = groesse;
+    }
+
+
     public void aendereAttribute(String aName, int anAge, float aTalleness){
         name = aName;
         alter = anAge;
