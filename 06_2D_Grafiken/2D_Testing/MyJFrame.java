@@ -11,5 +11,6 @@ public class MyJFrame extends JFrame{
         g.drawLine(140, 110, 140, 210); //Strich nach unten
         g.drawLine(140, 150,  90, 120); //Arm nach links
         g.drawLine(140, 150, 190, 120); //Arm nach rechts
+        g.drawRect(180, 180, 20, 20);
     }
 }
