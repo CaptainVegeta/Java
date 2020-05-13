@@ -6,9 +6,9 @@ public class DiceFrame extends JFrame
     public Dice dice;
     
     public DiceFrame(){
-        dice = new Dice(10, 10);
+        dice = new Dice(20, 40);
         dice.rollDice();
-        setSize(120, 120);
+        setSize(120, 150);
         setVisible(true);
         addKeyListener(new Keys());
         setLocation(800, 400);

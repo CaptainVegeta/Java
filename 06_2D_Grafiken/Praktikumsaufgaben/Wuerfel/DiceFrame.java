@@ -1,6 +1,5 @@
-import java.awt.Graphics;
-
-import javax.swing.JFrame;
+import java.awt.*;
+import javax.swing.*;
 
 /**
  * DiceFrame: Erbt von JFrame. Über den Konstruktor wird die Grösse und Sichtbarkeit des
@@ -9,17 +8,15 @@ Fensters gesetzt. Zudem wird Dice instanziiert. Besitzt die Methode paint(Graphi
 public class DiceFrame extends JFrame{
 
     public DiceFrame(){
-        JFrame diceFrame = new JFrame("Würfel");
-        diceFrame.setVisible(true);
-        diceFrame.setSize(220, 220);
-        diceFrame.setLocation(700, 300);
-        diceFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-
-        // Zudem wird Dice instanziiert.
-        Dice dice = new Dice();
+        setVisible(true);
+        setSize(220, 220);
+        setLocation(700, 300);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
-    public void paint(Graphics g) {
-        g.drawRect(20, 20, 40, 40);
+    Dice dice = new Dice();
+
+    public void paint(Graphics g){
+        dice.drawDice(g);
     }
 }
