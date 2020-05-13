@@ -12,6 +12,7 @@ public class DiceFrame extends JFrame{
         setSize(220, 220);
         setLocation(700, 300);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        addKeyListener(new Keys());
     }
 
     Dice dice = new Dice();

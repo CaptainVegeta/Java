@@ -3,7 +3,9 @@
  */
 public class DiceGame{
 
+    public static DiceFrame diceFrame;
+
     public static void main(String[] args) {
-        DiceFrame diceFrame = new DiceFrame();
+        diceFrame = new DiceFrame();
     }
 }

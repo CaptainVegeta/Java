@@ -9,7 +9,7 @@ public class Dice {
     public int x_Abstand = 20;
     public int y_Abstand = 40;
     public int wuerfelGroesse = 100;
-    public int punktGroesse = 15;
+    public int punktGroesse = 20;
     public int number = 0;
 
     public Dice(){
@@ -18,12 +18,14 @@ public class Dice {
     }
 
     public void drawDice(Graphics g){
+        g.setColor(Color.WHITE);
+        g.fillRect(x_Abstand, y_Abstand, wuerfelGroesse, wuerfelGroesse);
         drawBody(g);
         drawDots(g, number);
     }
 
     public void drawBody(Graphics g){
-        g.setColor(Color.BLACK);
+        g.setColor(Color.WHITE);
         g.fillRect(x_Abstand, y_Abstand, wuerfelGroesse, wuerfelGroesse);
     }
 
