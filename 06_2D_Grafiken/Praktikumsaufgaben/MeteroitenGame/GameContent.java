@@ -1,4 +1,5 @@
 import java.awt.*;
+
 /**
  * GameContent
  */
@@ -7,8 +8,8 @@ public class GameContent {
     public boolean getroffen = false;
     public int x_position = getRandom(50, 350);
     public int y_position = 40;
-    public int x_positionBar = 150;
-    public int nMeteoriten = 8;
+    public static int x_positionBar = 150;
+    public int nMeteoriten = 5;
 
     public void gameSchleife(Graphics g){
             drawBar(g);
@@ -21,6 +22,7 @@ public class GameContent {
         g.setColor(Color.RED);
         g.fillRect(x_positionBar, 250, 20, 5);
     }
+
 
     public void drawMeteroit(Graphics g){
         g.setColor(Color.BLACK);
