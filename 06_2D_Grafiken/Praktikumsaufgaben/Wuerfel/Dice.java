@@ -18,19 +18,19 @@ public class Dice {
     }
 
     public void drawDice(Graphics g){
-        g.setColor(Color.WHITE);
+        g.setColor(Color.BLACK);
         g.fillRect(x_Abstand, y_Abstand, wuerfelGroesse, wuerfelGroesse);
         drawBody(g);
         drawDots(g, number);
     }
 
     public void drawBody(Graphics g){
-        g.setColor(Color.WHITE);
+        g.setColor(Color.BLACK);
         g.fillRect(x_Abstand, y_Abstand, wuerfelGroesse, wuerfelGroesse);
     }
 
     public void drawDots(Graphics g, int number){
-        g.setColor(Color.BLUE);
+        g.setColor(Color.RED);
         switch (number){
             case 1:
                 g.fillOval(x_Abstand + wuerfelGroesse/2 - punktGroesse/2, y_Abstand + wuerfelGroesse/2 - punktGroesse/2,
