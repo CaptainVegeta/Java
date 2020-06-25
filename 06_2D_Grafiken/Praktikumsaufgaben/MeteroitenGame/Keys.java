@@ -10,12 +10,10 @@ public class Keys extends SimplifiedListener{
         int rechts = e.getKeyCode();
 
         if(links == KeyEvent.VK_LEFT){
-            GameContent.x_positionBar -= 10;
-            Game.gameFrame.repaint();
+            Game.gameFrame.gameContent.x_positionBar -= 10;
         }
         else if(rechts == KeyEvent.VK_RIGHT){
-            GameContent.x_positionBar += 10;
-            Game.gameFrame.repaint();
+            Game.gameFrame.gameContent.x_positionBar += 10;
         }
         else{
             // do nothing
