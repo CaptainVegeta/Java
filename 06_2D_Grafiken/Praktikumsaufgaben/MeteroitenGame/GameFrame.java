@@ -22,6 +22,10 @@ public class GameFrame extends JFrame{
             g.setColor(Color.GRAY);
             g.fillRect(0, 0, 400, 300);
             gameContent.drawBar(g);
+            gameContent.drawBar(g);
+            gameContent.drawBar(g);
+            gameContent.drawBar(g);
+            gameContent.drawBar(g);
             gameContent.gameSchleife(g);
     }
 }

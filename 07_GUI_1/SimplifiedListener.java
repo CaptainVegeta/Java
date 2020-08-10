@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.awt.event.*;
 
 /**
- * Klasse für vereinfachte Tasteneingabe und J-Elemnt-Aktionsabfragen
+ * Klasse für vereinfachte Tasteneingabe und J-Element-Aktionsabfragen
  */
 public class SimplifiedListener implements KeyListener, ActionListener
 {
